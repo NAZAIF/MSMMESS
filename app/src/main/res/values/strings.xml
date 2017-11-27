@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MSM MESS</string>
+    <string name="text_str">text change</string>
+    <string name="AddnameText">Give your Name</string>
+    <string name="nameEditText">Name</string>
+    <string name="add_Btn">Add me</string>
+</resources>
