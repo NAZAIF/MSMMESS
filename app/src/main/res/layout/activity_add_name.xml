@@ -3,35 +3,34 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.nazaif.msmmess.AddName">
 
     <EditText
         android:id="@+id/nameEdit"
         android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="95dp"
         android:background="@color/white"
-        android:gravity="center"
         android:backgroundTint="@color/lightGreen"
-        android:hint="@string/nameEditText" />
+        android:gravity="center"
+        android:hint="@string/nameEditText"
+        android:textSize="15sp" />
 
     <Button
         android:id="@+id/nameAddBtn"
-        android:background="@color/colorPrimary"
         android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:text="@string/add_Btn"
-        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        />
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/add_Btn"
+        android:textSize="15sp" />
 
 
 </LinearLayout>

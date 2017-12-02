@@ -3,6 +3,7 @@ package com.example.nazaif.msmmess;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 public class Splash extends AppCompatActivity {
 
@@ -11,6 +12,8 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        ImageView img = (ImageView) findViewById(R.id.imageView);
+        img.animate().alpha(1).setDuration(2000);
         final Intent intent = new Intent(this,MainActivity.class);
 
         Thread myThread = new Thread(){

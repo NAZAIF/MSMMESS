@@ -4,4 +4,11 @@
     <string name="AddnameText">Give your Name</string>
     <string name="nameEditText">Name</string>
     <string name="add_Btn">Add me</string>
+    <string name="LunchText">Lunch</string>
+    <string name="BreakfastText">Breakfast</string>
+    <string name="DinnerText">Dinner</string>
+    <string name="YesStr">Yes</string>
+    <string name="NoStr">No</string>
+    <string name="ChooseStr">Choose</string>
+    <string name="statusStr">Submit Status</string>
 </resources>
