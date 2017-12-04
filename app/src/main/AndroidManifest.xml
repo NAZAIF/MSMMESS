@@ -35,6 +35,7 @@
             android:name=".AddName"
             android:label="@string/AddnameText"
             android:theme="@style/AppTheme" />
+        <activity android:name=".StatusBkfs"></activity>
     </application>
 
 </manifest>
