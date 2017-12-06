@@ -40,6 +40,10 @@ public class AddName extends AppCompatActivity {
 
             Toast.makeText(AddName.this, newName+" is Added", Toast.LENGTH_SHORT).show();
 
+                Intent i = new Intent(AddName.this, MainActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(i);
+
 
             }
         });

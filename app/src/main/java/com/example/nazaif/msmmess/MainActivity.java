@@ -6,6 +6,8 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
@@ -21,25 +23,16 @@ import com.google.firebase.database.ValueEventListener;
 
 public class MainActivity extends AppCompatActivity {
 
-//    private DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
-//    private DatabaseReference membersRef = rootRef.child("members");
-
-    CardView cardView;
-    TextView text1, text2, text3;
+    CardView cd_bkfs, cd_lnch, cd_dnnr;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        text1 = (TextView) findViewById(R.id.textViewbkfs);
+        cd_bkfs = (CardView) findViewById(R.id.bkfs_card);
+        cd_lnch = (CardView) findViewById(R.id.lnch_card);
+        cd_dnnr = (CardView) findViewById(R.id.dnnr_card);
 
-        text1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, StatusBkfs.class);
-                startActivity(i);
-            }
-        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -51,23 +44,20 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-//    @Override
-//    protected void onStart() {
-//        super.onStart();
-//
-//        membersRef.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//                String text = dataSnapshot.getValue(String.class);
-//                hellotxt.setText(text);
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//            }
-//        });
-//    }
+    public void bkfs_onclick(View view) {
+        Intent i = new Intent(MainActivity.this, BkfsStatus.class);
+        startActivity(i);
+    }
+
+    public void lnch_onclick(View view) {
+        Intent i = new Intent(MainActivity.this, LnchStatus.class);
+        startActivity(i);
+    }
+
+    public void dnnr_onclick(View view) {
+        Intent i = new Intent(MainActivity.this, DnnrStatus.class);
+        startActivity(i);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

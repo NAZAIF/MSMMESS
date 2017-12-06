@@ -80,6 +80,10 @@ public class MemberMessDetails extends AppCompatActivity {
 
                 Toast.makeText(MemberMessDetails.this, "Status Updated", Toast.LENGTH_SHORT).show();
 
+                Intent i = new Intent(MemberMessDetails.this, MainActivity.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(i);
+
             }
         });
 
